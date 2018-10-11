@@ -31,6 +31,8 @@ public class TestRomanNumerals {
 
 	}
 	
+	
+	
 	@Test
 	public void VtoFive() {
 
@@ -65,7 +67,7 @@ public class TestRomanNumerals {
 	}
 	
 	@Test
-	public void ShouldFailRule1() {
+	public void ShouldFail_IIII() {
 
 		String roman = "IIII";
 
@@ -76,7 +78,7 @@ public class TestRomanNumerals {
 	}
 	
 	@Test
-	public void ShouldFailRule2() {
+	public void ShouldFail_VV() {
 
 		String roman = "VV";
 
@@ -86,7 +88,7 @@ public class TestRomanNumerals {
 
 	}
 	@Test
-	public void ShouldFailRule3() {
+	public void ShouldFail_IC() {
 
 		String roman = "IC";
 
@@ -96,7 +98,7 @@ public class TestRomanNumerals {
 
 	}
 	@Test
-	public void ShouldFailRule4() {
+	public void ShouldFail_IIX() {
 
 		String roman = "IIX";
 

@@ -14,7 +14,9 @@ public class RomanArabicConverter {
             if (romanNumeral.startsWith(symbol.name())) {
                 result += symbol.getValue();
                 romanNumeral = romanNumeral.substring(symbol.name().length());
-            } else {
+            } 
+            
+            else {
                 i++;
             }
         }
@@ -22,11 +24,10 @@ public class RomanArabicConverter {
             throw new IllegalArgumentException(input + " cannot be converted to a Roman Numeral");
         }
         
-        
-
         return result;
     }
-
+	
+/*
     public static String arabicToRoman(int number) {
         if ((number <= 0) || (number > 4000)) {
             throw new IllegalArgumentException(number + " is not in range (0,4000]");
@@ -47,5 +48,5 @@ public class RomanArabicConverter {
             }
         }
         return sb.toString();
-    }
+  }*/  
 }
